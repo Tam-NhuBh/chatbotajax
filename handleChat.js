@@ -65,7 +65,7 @@ const handleSendMsg = () => {
     script_id: botID,
     current_node_id: userID,
     message: msg,
-    firstCheck = true,
+    firstCheck : true,
   };
 
   $.ajax({
