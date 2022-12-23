@@ -61,11 +61,10 @@ const handleSendMsg = () => {
   $(".chatbox__messages").prepend(senderHTML);
   $("#inputMessage").val("");
   let request = {
-    secret_key: securitykey,
-    script_id: botID,
-    current_node_id: userID,
-    message: msg,
-    firstCheck = true,
+    secret_key: secretKey,
+    script_id: scriptId,
+    current_node_id: currentNodeId,
+    message: msg,,
   };
 
   $.ajax({
